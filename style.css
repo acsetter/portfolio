@@ -48,7 +48,6 @@ h2 {
 
 h3 {
     line-height: 1em; 
-    font-weight: 400;
     letter-spacing: 0.15em;
 }
 
@@ -219,6 +218,10 @@ h3 {
 
 #cgs-thumb {
     background-image: url(img/ux_thumb.jpg);
+}
+
+#msweep-thumb {
+    background-image: url(img/ui/ms/hard.png);
 }
 
 .tile {
