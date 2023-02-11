@@ -9,7 +9,7 @@ const codeBtn = document.getElementById("code-btn");
 const tsPrj = document.getElementById("ts-prj");
 const cgsPrj = document.getElementById("cgs-prj");
 
-homeBtn.onclick = (e) => open("index.html", "_self");
+homeBtn.onclick = (e) => open("index.html#home", "_self");
 infoBtn.onclick = (e) => open("index.html#about", "_self");
 codeBtn.onclick = (e) => open("index.html#projects", "_self");
 designBtn.onclick = (e) => open("index.html#designs", "_self");

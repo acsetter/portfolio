@@ -27,8 +27,8 @@ window.onresize = function() {
     streams.forEach(function(ele) {
         ele.sizeReset();
     })
-    requestAnimationFrame(function() {swipes.forEach(function(ele) {
-        ele.resize()})});
+    requestAnimationFrame(
+        function() {swipes.forEach(function(ele) {ele.resize()})});
 }
 
 
@@ -385,18 +385,18 @@ export class Tilestream {
     // Method for setting desktop mode layout variables.
     desktop(rowImgMax, rowRatioMax, tileGap, rowGap) {
         try {
-            if(Number.isInteger(rowImgMax) && rowImgMax > 0) {
+            if (Number.isInteger(rowImgMax) && rowImgMax > 0) {
                 this._rowImgMax = rowImgMax;
             } else {throw new TypeError(typeErr.get('int'));};
-            if(typeof rowRatioMax == 'number' && rowRatioMax >= 0){
+            if (typeof rowRatioMax == 'number' && rowRatioMax >= 0){
                 this._rowRatioMax = rowRatioMax;
             } else {throw new TypeError(typeErr.get('num'));};
-            if(typeof tileGap == 'number') {
+            if (typeof tileGap == 'number') {
                 this._tileGap = tileGap;
             } else {throw new TypeError(typeErr.get('num'));};
-            if(typeof rowGap == 'number') {
+            if (typeof rowGap == 'number') {
                 this._rowGap = rowGap;
-            } else if(!rowGap && rowGap !== 0) {
+            } else if (!rowGap && rowGap !== 0) {
                 this._rowGap = tileGap;
             } else {throw new TypeError(typeErr.get('num'));};
         } catch(e) {   
@@ -406,21 +406,21 @@ export class Tilestream {
     //Method for setting mobile view layout:
     mobile(width, rowImgMax, rowRatioMax, tileGap, rowGap) {
         try {
-            if(Number.isInteger(width) && width > 0) {
+            if (Number.isInteger(width) && width > 0) {
                 this._mobWidth = width;
             } else {throw new TypeError(typeErr.get('int'));};
-            if(Number.isInteger(rowImgMax) && rowImgMax > 0) {
+            if (Number.isInteger(rowImgMax) && rowImgMax > 0) {
                 this._mobRowImgMax = rowImgMax;
             } else {throw new TypeError(typeErr.get('num'));};
-            if(typeof rowRatioMax == 'number' && rowRatioMax >= 0){
+            if (typeof rowRatioMax == 'number' && rowRatioMax >= 0){
                 this._mobRowRatioMax = rowRatioMax;
             } else {throw new TypeError(typeErr.get('num'));};
-            if(typeof tileGap == 'number') {
+            if (typeof tileGap == 'number') {
                 this._mobTileGap = tileGap;
             } else {throw new TypeError(typeErr.get('num'));};
-            if(typeof rowGap == 'number') {
+            if (typeof rowGap == 'number') {
                 this._mobRowGap = rowGap;
-            } else if(!rowGap && rowGap !== 0) {
+            } else if (!rowGap && rowGap !== 0) {
                 this._mobRowGap = tileGap;
             } else {throw new TypeError(typeErr.get('num'));};
         } catch(e) {   

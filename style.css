@@ -224,6 +224,10 @@ h3 {
     background-image: url(img/ui/ms/hard.png);
 }
 
+#pawpals-thumb {
+    background-image: url(img/pawpals/splash.png);
+}
+
 .tile {
     box-shadow: 0px 0px 10px 3px rgba(15, 15, 15, 0.6);
 }
